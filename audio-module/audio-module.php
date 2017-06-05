@@ -44,6 +44,14 @@ FLBuilder::register_module('TIAAudioModule', array(
                         'default'       => '',
                         'help'          => 'Insert text to be displayed.'
                     ),
+                    'font' => array(
+                        'type'          => 'font',
+                        'label'         => __( 'Font', 'fl-builder' ),
+                        'default'       => array(
+                            'family'        => 'Helvetica',
+                            'weight'        => 400
+                        )
+                    ),
                     'audio'    => array(
                         'type'          => 'text',
                         'label'         => __('Audio File URL', 'fl-builder'),
