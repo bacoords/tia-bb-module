@@ -13,17 +13,25 @@
 ?>
 <div class="tia-fl-audio-module">
    
-  <div class="tia-fl-audio-module__image">
-   
-    <img src="<?php echo $settings->photo_src; ?>">
+  <?php if( $settings->photo_src ) : ?>
     
-  </div>
+    <div class="tia-fl-audio-module__image">
+
+      <img src="<?php echo $settings->photo_src; ?>">
+
+    </div>
   
-  <div class="tia-fl-audio-module__text">
-    
-    <?php echo $settings->text; ?>
-    
-  </div>    
+  <?php endif; ?>
+  
+  <?php if( $settings->text ) : ?>
+  
+    <div class="tia-fl-audio-module__text">
+
+      <?php echo $settings->text; ?>
+
+    </div>  
+  
+  <?php endif; ?>  
         
   <a href="#" data-mp3="<?php echo $settings->audio; ?>" class="tia-fl-audio-module__play">
     <i class="fa fa-play"></i>
